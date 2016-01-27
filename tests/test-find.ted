@@ -1,0 +1,27 @@
+int main() {
+
+  Page p;
+  List l;
+  Element e;
+  string s;
+  List l2;
+  Element e2;
+  string s2;
+
+
+  p = pageFetch("http://example.com");
+  l = pageFind(p, "title");
+  
+  e = listHead(l);
+  s = elementText(e);
+  print(stdout, "%s\n", s); 
+
+  l2 = pageFind(p, "h1");
+  e2 = listHead(l2);
+  s2 = elementText(e2);
+  print(stdout, "%s\n", s2);
+
+  return 0;
+}
+
+

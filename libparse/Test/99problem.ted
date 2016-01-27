@@ -1,0 +1,18 @@
+int main() {
+	Page page;
+	List first;
+	Element codeElement;
+	string code;
+	file f;
+
+
+	page = pageFetch("http://www.99-bottles-of-beer.net/language-bash-1815.html");
+	
+	first = pageFind(page, "#main > pre");
+	codeElement = listHead(first);
+	code = elementText(codeElement);
+	f = open("99problem.sh","w");
+	print(f, "%s\n", code);
+
+	return 0;
+}

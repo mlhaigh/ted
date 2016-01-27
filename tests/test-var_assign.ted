@@ -1,0 +1,8 @@
+int main() {
+int x = 4;
+int y;
+y = 2;
+print(stdout, "%d", x);
+print(stdout, "%d\n", y);
+return 0;
+}

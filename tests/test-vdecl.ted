@@ -1,0 +1,6 @@
+int main() {
+    int y;
+    int x= 42;
+    print(stdout, "%d\n", x);
+    return 0;
+}

@@ -1,0 +1,13 @@
+int main() {
+    int i;
+    int x;
+    i = 0;
+    x = 0;
+    while (i < 42) {
+        x = x + 1;
+        i = i + 1;
+    }
+    print(stdout, "%d\n", x);
+    return 0;
+}
+

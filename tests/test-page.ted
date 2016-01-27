@@ -1,0 +1,14 @@
+int main() {
+
+  Page p;
+  string url;
+  string html;
+
+  p = pageFetch("http://example.com");
+
+  url = pageURL(p);
+  print(stdout, "%s\n", url);
+
+  return 0;
+}
+

@@ -1,0 +1,10 @@
+int main() {
+
+file out;
+
+out = open("test-printfile.rslt", "wb");
+print(out, "%s\n", "panic");
+
+return 0;
+
+}

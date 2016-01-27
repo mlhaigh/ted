@@ -1,0 +1,38 @@
+int main() {
+int x;
+x = 42;
+    if (x == 42) {
+        print(stdout, "ted");
+    }
+
+    if (x < 43) {
+        print(stdout, " ted");
+    }
+
+    if (x != 44) {
+        print(stdout, " ted");
+    }
+
+    if (x > 41) {
+        print(stdout, " ted");
+    }
+
+    if (x <= 41) {
+        print(stdout, " fail");
+    } else {
+        print(stdout, " ted");
+    }
+
+    if (x >= 43) {
+        print(stdout, " fail");
+    } else if (x <= 42) {
+        print(stdout, " ted");
+    } 
+
+    if (x != 42)
+        print(stdout, " fail");
+    else
+        print(stdout, " ted\n");
+
+    return 0;
+}

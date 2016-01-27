@@ -1,0 +1,10 @@
+int add(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    int x;
+    x = add(21, 21);
+    print(stdout, "%d\n", x);
+    return 0;
+}

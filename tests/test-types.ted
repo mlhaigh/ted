@@ -1,0 +1,20 @@
+string sfun(string s) {
+    return s;
+}
+
+List lfun(List l) {
+    return l;
+}
+
+Page pfun(Page p) {
+    return p;
+}
+
+Element efun(Element e) {
+    return e;
+}
+
+int main() {
+    print(stdout, "42\n");
+    return 0;
+}

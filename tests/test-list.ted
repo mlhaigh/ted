@@ -1,0 +1,30 @@
+int main() {
+  List l;
+  List l2;
+  List l3;
+  List l4;
+  int i;
+  int j;
+  int len;
+
+  l = listNew();
+  listAddLast(l, 1);
+  listAddLast(l, 2);
+
+  l2 = listNew();
+  listAddLast(l2, 3);
+  listAddLast(l2, 4);
+  l4 = listTail(l2);
+  listAddLast(l4, 5);
+
+  l3 = listConcat(l, l2);
+
+  for (i = 0; i < 5; i = i + 1) {
+    j = listHead(l3);
+    print(stdout, "%d", j);
+    l3 = listTail(l3);
+  }
+
+  return 0;
+}
+  

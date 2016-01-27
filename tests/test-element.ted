@@ -1,0 +1,20 @@
+int main() {
+  Page p;
+  Element e;
+  List l;
+  List l1;
+  List l2;
+  Element f;
+  string s;
+  string t;
+  Element g;
+  p = pageFetch("http://www.example.com");
+  e = pageRoot(p);
+  l = elementChildren(p, e);
+  e = listHead(l);
+  l1 = listTail(l);
+  f = listHead(l1);
+  s = elementText(f);
+  print(stdout, "%s\n", s);
+  return 0;
+}
